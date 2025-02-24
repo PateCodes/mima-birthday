@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mima!</title>
+    <style>
+        body {
+            background-color: #f9e3d2;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            overflow-y: scroll; /* Enable vertical scrolling */
+            height: 100vh; /* Full height */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .word {
+            display: inline-block;
+            font-size: 48px;
+            color: black;
+            animation: bounce 1s ease infinite;
+        }
+        .love-phrase {
+            font-size: 24px;
+            color: black;
+            margin: 20px 0;
+            animation: fadeIn 2s;
+        }
+        .flowers {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 5px;
+            display: inline-block;
+            animation: grow 0.5s infinite alternate;
+        }
+        .btn:hover {
+            background-color: #333;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes grow {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+            .word {
+                font-size: 36px; /* Smaller font size for smaller screens */
+            }
+            .love-phrase {
+                font-size: 18px; /* Adjust font size */
+            }
+            .flowers {
+                font-size: 40px; /* Adjust flower size */
+            }
+            .btn {
+                font-size: 18px; /* Adjust button font size */
+                padding: 8px 16px; /* Adjust padding for buttons */
+            }
+        }
+
+        /* Header styling */
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 100%; /* Ensure images don't overflow */
+            height: auto;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #fff;
+            padding: 10px 0;
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+        }
+        footer img {
+            max-width: 100%; /* Ensure images don't overflow */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Placeholder Image -->
+    <header>
+        <img src="milli.png" alt="Header Image">
+    </header>
+
+    <h1>
+        <span class="word" style="animation-delay: 0s;">Happy</span>
+        <span class="word" style="animation-delay: 0.2s;">Birthday,</span>
+        <span class="word" style="animation-delay: 0.4s;">Mima!</span>
+        <span class="flowers">🌸🌺🌼</span>
+    </h1>
+    
+    <p class="love-phrase">Today I celebrate YOU! 🎂💖</p>
+    
+    <p class="flowers">🌷💐🌻</p>
+    
+    <div class="love-phrase">You are my sunshine, my love, my best friend! 🌟❤️</div>
+    
+    <p class="flowers">🌹✨🌼</p>
+    
+    <a href="#" class="btn" onclick="showMessage('❤️ Love You! ❤️')">❤️ Love You! ❤️</a>
+    <a href="#" class="btn" onclick="showMessage('💖 You Are Amazing! 💖')">💖 You Are Amazing! 💖</a>
+    <a href="#" class="btn" onclick="showMessage('😍 So Grateful for You! 😍')">😍 So Grateful for You! 😍</a>
+    <a href="#" class="btn" onclick="showMessage('You Bring Joy!')">You Bring Joy!</a>
+    <a href="#" class="btn" onclick="showMessage('😘 Forever Mine! 😘')">😘 Forever Mine! 😘</a>
+
+    <br><br>
+
+    <!-- Footer Section with Placeholder Image -->
+    <footer>
+        <img src="mimaa.png" alt="Footer Image">
+    </footer>
+
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
